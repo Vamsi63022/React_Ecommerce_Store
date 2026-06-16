@@ -7,8 +7,7 @@ import { useCart } from "../context/CartContext";
 
 const FurnitureSingle = () => {
   const { id } = useParams();
-
-  const {addToCart, cartItems} = useCart()
+const { addToCart } = useCart();
 
   const product = furnitureData.find((item) => item.id === id);
 
