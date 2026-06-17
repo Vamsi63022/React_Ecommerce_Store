@@ -1,11 +1,7 @@
 import React from "react";
-// import ReactDOM from "react-dom/client";
 import "./App.css";
 import LandingPage from './stores/pages/LandingPage';
 import Navbar from "./stores/components/Navbar";
-// import Woman from "./stores/components/Woman";
-// import Furniture from "./stores/components/Furniture";
-// import Ac from "./stores/components/Ac";
 import MobilePage from "./stores/pages/MobilePage";
 import WomanPage from './stores/pages/WomanPage'
 import MenPage from "./stores/pages/MenPage";
@@ -16,10 +12,7 @@ import TvPage from "./stores/pages/TvPage";
 import LoginSignup from "./stores/pages/LoginSignup";
 
 import Computer from "./stores/components/Computer";
-// import Watch from "./stores/components/Watch";
-// import Tv from "./stores/components/Tv";
 import UserCart from './stores/UserCart'
-import BannerCarousel from "./stores/components/BannerCarousel";
 import Footer from "./stores/components/Footer";
 import MobileSingle from './stores/singles/MobileSingle'
 import AcSingle from "./stores/singles/AcSingle";
@@ -37,14 +30,8 @@ return(
     <>
     <Navbar />
     <Routes>
-        <Route path ="/BannerCarousel" element ={<BannerCarousel/>}/>
         <Route path = "/Mobiles" element ={<MobilePage/>}/>
         <Route path = "/Computer" element ={<Computer/>}/>
-        {/* <Route path = "/Watch" element ={<Watch/>}/> */}
-        {/* <Route path = "/Woman" element ={<Woman/>}/> */}
-        {/* <Route path = "/Furniture" element ={<Furniture/>}/> */}
-        {/* <Route path = "/Ac" element ={<Ac/>}/> */}
-        {/* <Route path = "/Tv" element ={<Tv/>}/> */}
         <Route path='/mobiles/:id' element = {<MobileSingle />} />
         <Route path='/woman/:id' element = {<WomanSingle />} />
          <Route path='/men/:id'  element={<MenSingle />} />  
