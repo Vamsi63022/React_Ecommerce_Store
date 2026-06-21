@@ -14,7 +14,7 @@ const Tv = () => {
             {firstFiveImages.map((item) =>{
                 return(
                     <div className="imgBox" key={item.id}>
-                        <img className="proImage" src={item.image} alt={item.product} />
+                        <a href="/tv"><img className="proImage" src={item.image} alt={item.product} /></a>
                         {/* <p>{item.type}</p>
                         <p>{item.brand}</p>
                         <p>{item.model}</p>

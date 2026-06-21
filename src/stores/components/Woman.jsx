@@ -16,7 +16,7 @@ return(
             {womanImages.map((item) =>{
                 return(
                     <div className ="imgBox" key ={item.id}>
-                        <img className="proImage" src={`/${item.image}`} alt={item.model || "product"} />
+                        <a href="/woman"><img className="proImage" src={`/${item.image}`} alt={item.model || "product"} /></a>
         
                          </div>
                 )

@@ -14,7 +14,7 @@ const Furniture = ({limit}) => {
             {furnitureImages.map((item) =>{
                 return(
                     <div className="imgBox" key={item.id}>
-                        <img className="proImage" src={item.image} alt={item.product} />
+                       <a href="/furniture"> <img className="proImage" src={item.image} alt={item.product} /></a>
                         {/* <p>{item.type}</p>
                         <p>{item.brand}</p>
                         <p>{item.model}</p>
